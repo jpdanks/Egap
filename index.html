@@ -22,7 +22,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top global-header">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,13 +31,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-logo" href="#"><img src="img/egencia_logo_white.png"></a>
+          <!-- <a class="navbar-brand" href="#">Egencia</a> -->
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Book</a></li>
+            <li><a href="#about">Trips</a></li>
+            <li><a href="#contact">Help</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -48,6 +49,26 @@
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+      <div class="search-form">
+          <form>
+              <fieldset class="radio-tabs">
+                  <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
+                  <label for="rt-1" class="radio-tab-label">Round Trip</label>
+                  <input type="radio" name="flight_type" value="oneway" id="rt-2" class="radio-tab">
+                  <label for="rt-2" class="radio-tab-label">One Way</label>
+                  <input type="radio" name="flight_type" value="multicity" id="rt-3" class="radio-tab">
+                  <label for="rt-3" class="radio-tab-label">Multi-City</label>
+              </fieldset>
+              <fieldset class="searchbox">
+                  <label class="searchbox-label"><i class="egencia-icon"></i></label>
+                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York" class="searchbox-input">
+              </fieldset>
+              <fieldset class="searchbox">
+                  <label class="searchbox-label"><i class="egencia-icon"></i></label>
+                  <input type="text" name="flight_destination" placeholder="Where are you going?" class="searchbox-input">
+              </fieldset>
+          </form>
       </div>
 
     </div><!-- /.container -->

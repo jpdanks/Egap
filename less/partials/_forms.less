@@ -1,0 +1,55 @@
+// Form custom styling
+
+.search-form {
+	color: #fff;
+	padding-left: @navbar-padding-horizontal * 4;
+	.egencia-icon {
+		position: absolute;
+		font-weight: 100;
+		font-size: @font-size-h1;
+		padding-top: @navbar-padding-vertical;
+		margin-left: -(@navbar-padding-horizontal * 4);
+	}
+}
+
+.radio-tab-label {
+	font-weight: 400;
+	opacity: .4;
+	padding: 0 @padding-base-horizontal;
+}
+.radio-tab {
+	display: none;
+	&:checked + .radio-tab-label{
+		opacity:1;
+	}
+}
+
+.searchbox-input {
+	background: transparent;
+	border: none;
+	width: 100%;
+	font-weight: 100;
+	font-size: @font-size-h1;
+	padding: (@navbar-padding-vertical / 2) @navbar-padding-horizontal; 
+	&:focus {
+		outline: none;
+	}
+}
+
+.searchbox + .searchbox {
+	.egencia-icon {
+		padding-top: (@navbar-padding-vertical / 2);
+		&:before {
+			content: " ";
+			position: absolute;
+			top: -(@navbar-padding-vertical * 1.5);
+			margin-left: ((@navbar-padding-horizontal * 1.5) - 1px);
+			height: 30px;
+			border-left: 2px dashed;
+			opacity: .3;
+		}
+	}
+	.searchbox-input {
+		padding-top: 0;
+	}
+}

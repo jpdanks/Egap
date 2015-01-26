@@ -1498,11 +1498,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", "SegoeUI-SemiBold", "Segoe UI Semibold", "Segoe UI", "Roboto-Medium", "Roboto Medium", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #37383a;
 }
 input,
 button,
@@ -1547,7 +1547,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #37383a;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2694,7 +2694,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #37383a;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4335,7 +4335,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #ffffff;
+  background-color: #37383a;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4381,7 +4381,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #37383a;
   }
 }
 .nav-pills > li {
@@ -4449,7 +4449,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #37383a;
   }
 }
 .tab-content > .tab-pane {
@@ -5295,7 +5295,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #ffffff;
+  background-color: #37383a;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -6230,7 +6230,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", "SegoeUI-SemiBold", "Segoe UI Semibold", "Segoe UI", "Roboto-Medium", "Roboto Medium", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -6337,7 +6337,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", "SegoeUI-SemiBold", "Segoe UI Semibold", "Segoe UI", "Roboto-Medium", "Roboto Medium", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6966,4 +6966,68 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.egencia-icon {
+  font-style: normal;
+  font-family: "EgenciaIcons";
+}
+.global-header {
+  background: #313335;
+  border: none;
+}
+.navbar-logo {
+  display: block;
+  padding: 15px 15px;
+  margin-left: -15px;
+}
+.navbar-logo img {
+  max-width: 125px;
+}
+.search-form {
+  color: #fff;
+  padding-left: 60px;
+}
+.search-form .egencia-icon {
+  position: absolute;
+  font-weight: 100;
+  font-size: 36px;
+  padding-top: 15px;
+  margin-left: -60px;
+}
+.radio-tab-label {
+  font-weight: 400;
+  opacity: .4;
+  padding: 0 12px;
+}
+.radio-tab {
+  display: none;
+}
+.radio-tab:checked + .radio-tab-label {
+  opacity: 1;
+}
+.searchbox-input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-weight: 100;
+  font-size: 36px;
+  padding: 7.5px 15px;
+}
+.searchbox-input:focus {
+  outline: none;
+}
+.searchbox + .searchbox .egencia-icon {
+  padding-top: 7.5px;
+}
+.searchbox + .searchbox .egencia-icon:before {
+  content: " ";
+  position: absolute;
+  top: -22.5px;
+  margin-left: 21.5px;
+  height: 30px;
+  border-left: 2px dashed;
+  opacity: .3;
+}
+.searchbox + .searchbox .searchbox-input {
+  padding-top: 0;
 }
