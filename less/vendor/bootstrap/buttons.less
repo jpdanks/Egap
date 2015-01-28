@@ -124,9 +124,14 @@
 // Button Sizes
 // --------------------------------------------------
 
+.btn-xlg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-xlarge-vertical; @padding-xlarge-horizontal; @font-size-large; @line-height-large; 0);
+}
+
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; 0);
 }
 .btn-sm {
   // line-height: ensure proper height of button next to small input

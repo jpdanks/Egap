@@ -6,7 +6,9 @@
 .button-variant(@color; @background; @border) {
   color: @color;
   background-color: @background;
-  border-color: @border;
+  border-color: transparent;
+  background-image: none;
+  box-shadow: none;
 
   &:hover,
   &:focus,
@@ -49,4 +51,5 @@
   font-size: @font-size;
   line-height: @line-height;
   border-radius: @border-radius;
+  font-weight: 300;
 }

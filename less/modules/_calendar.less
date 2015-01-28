@@ -1,0 +1,78 @@
+// Custom Calendar & Daterange Datepicker
+
+.daterange-picker {
+	font-size: @font-size-h3;
+	font-weight: 300;
+	padding-right: 30px;
+	padding-left: 0;	
+
+	table tr th, table tr td{
+		text-align: center;
+		border: none;
+	}
+	.month {
+		font-weight: 300;
+		padding-bottom: (@padding-base-horizontal * 2);
+		small {
+			opacity: .3;
+			font-size: @font-size-small;
+		}
+	}
+	.week th {
+		opacity: .3;
+		font-size: @font-size-small;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	table tr td {
+		padding: @padding-base-horizontal @padding-base-vertical ;
+		position: relative;
+		&.disabled, &.off {
+			opacity: .3;
+			&:hover:after {
+				border: none;
+			}
+		}
+		&.active {
+			background: transparent;
+			&:after {
+				z-index: 0;
+				content: "";
+				position: absolute;
+				margin: auto;
+				top: 5%;
+				left: 0;
+				right: 0;
+				display: block;
+				height: 50px;
+				width: 50px;
+				border-radius: 100px;
+				background-color: @brand-primary; 
+			}
+		}
+		&:hover {
+			&:after {
+				z-index: 0;
+				content: "";
+				position: absolute;
+				margin: auto;
+				top: 5%;
+				left: 0;
+				right: 0;
+				display: block;
+				height: 50px;
+				width: 50px;
+				border-radius: 100px;
+				border: 1px solid @brand-primary; 
+			}
+		}
+		.day {
+			position: relative;
+			z-index: 1;
+		}
+	}
+	+ .daterange-picker {
+		padding-right: 0;
+		padding-left: 30px;	
+	}
+}
