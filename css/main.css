@@ -7081,16 +7081,22 @@ button.close {
 .searchbox + .searchbox .searchbox-input {
   padding-top: 0;
 }
+.search-form-results {
+  margin-top: 48px;
+}
+.label-hr {
+  border-top: 1px solid #fff;
+  margin: 0;
+  opacity: .3;
+}
 .label-heading {
   opacity: .3;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
-  border-top: 1px solid #fff;
   width: 100%;
   padding: 6px 0;
-  margin-top: 48px;
 }
 .search-form-results-list {
   padding: 0;
@@ -7209,4 +7215,56 @@ button.close {
 .daterange-picker + .daterange-picker {
   padding-right: 0;
   padding-left: 30px;
+}
+.ui-widget-content {
+  background: #5c5e61;
+  height: 5px;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: #75777b;
+}
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  top: -8px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.ui-slider .ui-slider-handle:focus {
+  background: #fff;
+  outline: none;
+}
+.ui-slider .ui-slider-handle + .ui-slider-handle {
+  margin-left: -20px;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.ui-slider-range {
+  background: #009fc2;
 }

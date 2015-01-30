@@ -1,0 +1,58 @@
+// Custom Slider
+
+.ui-widget-content {
+	background: lighten(@body-bg, 15%);
+	height: 5px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: lighten(@body-bg, 25%);
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+	.ui-slider-handle {
+	  position: absolute;
+	  top: -8px;
+	  z-index: 2;
+	  width: 20px;
+	  height: 20px;
+	  border-radius: 100px;
+	  cursor: default;
+	  -ms-touch-action: none;
+	  touch-action: none;
+	  &:focus {
+	  	background: #fff;
+	  	outline: none;
+	  }
+	  + .ui-slider-handle {
+	  	  margin-left: -20px;
+	  }
+	 }
+	 .ui-slider-range {
+	  position: absolute;
+	  z-index: 1;
+	  font-size: .7em;
+	  display: block;
+	  border: 0;
+	  background-position: 0 0;
+	}
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-range {
+	background: @brand-primary;
+}
