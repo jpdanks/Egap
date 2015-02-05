@@ -419,6 +419,7 @@
         <script src="js/main.js"></script>
         <script src="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
         <script type="text/javascript">
+          var $delegate = $(document);
           $( "#price_slider" ).slider({
             range: "min",
             min: 1,
@@ -439,10 +440,10 @@
             range: true,
             values: [ 17, 67 ]
           });
-          $( "#filter-open" ).click(function() {
+          $delegate.on('click', "#filter-open", function() {
              $( "#filter-drawer" ).addClass( "open" );
           });
-          $( "#filter-close" ).click(function() {
+          $delegate.on('click', "#filter-close", function() {
              $( "#filter-drawer" ).removeClass( "open" );
           });
 
