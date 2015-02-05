@@ -1550,9 +1550,11 @@ img {
   background-color: #37383a;
   border: 1px solid #dddddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2963,9 +2965,11 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3800,9 +3804,11 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -5321,9 +5327,11 @@ a.badge:focus {
   background-color: #37383a;
   border: 1px solid #dddddd;
   border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  -ms-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5450,9 +5458,11 @@ a.thumbnail.active {
   background-color: #009fc2;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -ms-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
@@ -5466,6 +5476,9 @@ a.thumbnail.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
+  -webkit-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
+  -moz-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
+  -ms-animation: progress-bar-stripes 2s linear infinite 300ms 0 ease;
 }
 .progress-bar-success {
   background-color: #5cb85c;
@@ -6142,20 +6155,22 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
+  transform: translate(0, -25%);
   -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
+  transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
-  transform: translate(0, 0);
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -6484,9 +6499,11 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -ms-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6503,25 +6520,35 @@ button.close {
     backface-visibility: hidden;
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
+    -ms-perspective: 1000;
     perspective: 1000;
   }
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
-    -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
     left: 0;
   }
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
     left: 0;
   }
 }
@@ -7002,10 +7029,15 @@ button.close {
 }
 .fixed-bottom {
   position: fixed;
+  z-index: 100;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
+}
+.fixed-bottom .btn-xlg {
+  position: relative;
+  z-index: 3;
 }
 .global-header {
   background: #313335;
@@ -7134,8 +7166,90 @@ button.close {
 .prepend-result .egencia-icon {
   padding-left: 4.8px;
 }
+.mulit-select {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100px;
+  background: #fff;
+  padding: 0 12px;
+}
+.mulit-select .mulit-select-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mulit-select .mulit-select-list li {
+  padding: 8px 0 0 0;
+  border-bottom: 1px solid #ddd;
+}
+.mulit-select .mulit-select-list li input {
+  vertical-align: top;
+}
+.mulit-select .mulit-select-list li label {
+  margin: 0;
+}
+.mulit-select .multi-select-img {
+  max-width: 25px;
+  max-height: 20px;
+  margin-left: 6px;
+  margin-right: 12px;
+  float: left;
+}
+.mulit-select .multi-select-name {
+  float: left;
+  font-weight: 400;
+  color: #009fc2;
+  padding-top: 2px;
+}
 .drawer {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
   padding: 24px 24px;
+  margin-bottom: -100%;
+  transition: margin-bottom 0.25s ease-in-out;
+  -webkit-transition: margin-bottom 0.25s ease-in-out;
+  -moz-transition: margin-bottom 0.25s ease-in-out;
+  -ms-transition: margin-bottom 0.25s ease-in-out;
+  -o-transition: margin-bottom 0.25s ease-in-out;
+}
+.drawer.open {
+  height: auto;
+  display: block;
+  bottom: 0;
+  margin-bottom: 69px;
+}
+.drawer-toggle {
+  margin-bottom: -60px;
+  transition: margin-bottom 0.125s ease-in-out;
+  -webkit-transition: margin-bottom 0.125s ease-in-out;
+  -moz-transition: margin-bottom 0.125s ease-in-out;
+  -ms-transition: margin-bottom 0.125s ease-in-out;
+  -o-transition: margin-bottom 0.125s ease-in-out;
+}
+.drawer-toggle i {
+  display: block;
+  transition: margin-bottom 0.125s ease-in-out;
+  -webkit-transition: margin-bottom 0.125s ease-in-out;
+  -moz-transition: margin-bottom 0.125s ease-in-out;
+  -ms-transition: margin-bottom 0.125s ease-in-out;
+  -o-transition: margin-bottom 0.125s ease-in-out;
+}
+.drawer-toggle:hover {
+  cursor: pointer;
+}
+.drawer-toggle:hover i {
+  margin-bottom: 5px;
+}
+.drawer-toggle-bg {
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #37383a 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, #37383a 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #37383a 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff37383a', GradientType=0);
+  pointer-events: none;
 }
 .filter-drawer {
   background: #484a4c;

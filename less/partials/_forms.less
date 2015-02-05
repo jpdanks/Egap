@@ -109,3 +109,38 @@
 	}
 }
 
+.mulit-select {
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 100px;
+	background: #fff;
+	padding:0 @padding-base-horizontal;
+	.mulit-select-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			padding: 8px 0 0 0;
+			border-bottom: 1px solid #ddd;
+			input {
+				vertical-align: top;
+			}
+			label {
+				margin:0;
+			}
+		}
+	}
+	.multi-select-img {
+		max-width: 25px;
+		max-height: 20px;
+		margin-left: (@padding-base-horizontal / 2);
+		margin-right: @padding-base-horizontal;
+		float: left;
+	}
+	.multi-select-name{
+		float: left;
+		font-weight: 400;
+		color: @brand-primary;
+		padding-top: 2px;
+	}
+}

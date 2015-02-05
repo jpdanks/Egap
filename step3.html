@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body class="dark-theme">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top global-header">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-logo" href="#"><img src="img/egencia_logo_white.png"></a>
+          <!-- <a class="navbar-brand" href="#">Egencia</a> -->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Book</a></li>
+            <li><a href="#about">Trips</a></li>
+            <li><a href="#contact">Help</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container fixed-navbar-container">
+      <div class="search-form">
+          <form >
+              <fieldset class="radio-tabs">
+                  <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
+                  <label for="rt-1" class="radio-tab-label">Round Trip</label>
+                  <input type="radio" name="flight_type" value="oneway" id="rt-2" class="radio-tab">
+                  <label for="rt-2" class="radio-tab-label">One Way</label>
+                  <input type="radio" name="flight_type" value="multicity" id="rt-3" class="radio-tab">
+                  <label for="rt-3" class="radio-tab-label">Multi-City</label>
+              </fieldset>
+              <fieldset class="searchbox">
+                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
+                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input">
+              </fieldset>
+              <fieldset class="searchbox">
+                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
+                  <input type="text" name="flight_destination" placeholder="Where are you going?" class="searchbox-input">
+              </fieldset>
+          </form>
+          <!-- <div class="search-form-recent">
+            <div class="col-sm-4">
+                <hr class="prefix-hr label-hr">
+                <label class="label-heading">Recent</label>
+                <ul class="search-form-results-list">
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">PHL</span> <strong>Phil</strong>adelphia, PA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">PHL</span> <strong>Phil</strong>adelphia, PA - <strong>Phil</strong>ade...
+                         </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">ZFV</span> <strong>Phil</strong>adelphia, PA 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </div> -->
+          <div class="search-form-results">
+            <div class="col-sm-6">
+                <hr class="prefix-hr label-hr">
+                <label class="label-heading">Airport</label>
+                <ul class="search-form-results-list">
+                    <li>
+                        <a href="" class="active">
+                          <span class="prepend-result">PHL</span> <strong>Phil</strong>adelphia, PA <span class="text-muted">(all airports)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">PHL</span> <strong>Phil</strong>adelphia, PA - <strong>Phil</strong>adelphia/Wilmington Int'l
+                         </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">ZFV</span> <strong>Phil</strong>adelphia, PA - <strong>Phil</strong>adelphia Railway Station
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">TTN</span> <strong>Phil</strong>adelphia, PA - <strong>Phil</strong>adelphia Tenton-Mercer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">BZE</span> Belize City, Belize - Belize City <strong>Phil</strong>ip S. Goldson Int
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result">MJN</span> Mahajanga, Madagascar - Mahajanaga <strong>Phil</strong>ibert
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Republic of the <strong>Phil</strong>ippines, <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Autonomus Region in Muslim Mindanao, <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Bangsamoro, <strong>Phil</strong>ippines
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <hr class="prefix-hr label-hr">
+                <label class="label-heading">City</label>
+                <ul class="search-form-results-list">
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Republic of the <strong>Phil</strong>ippines, <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Autonomus Region in Muslim Mindanao, <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                          <span class="prepend-result"><i class="egencia-icon"></i></span> Bangsamoro, <strong>Phil</strong>ippines
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+    </div><!-- /.container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

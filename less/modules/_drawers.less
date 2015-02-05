@@ -1,7 +1,38 @@
 // Custom Drawers
 
 .drawer {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	overflow: hidden;
 	padding: (@padding-base-vertical * 4) (@padding-base-horizontal * 2);
+	margin-bottom: -100%;
+	.transition (margin-bottom .25s ease-in-out);
+	&.open {
+		height: auto;
+		display: block;
+		bottom: 0;
+		margin-bottom: 69px;
+	}
+}
+.drawer-toggle {
+	margin-bottom: -60px;
+	.transition (margin-bottom .125s ease-in-out);
+	i {
+		display: block;
+		.transition (margin-bottom .125s ease-in-out);
+	}
+	&:hover {
+		cursor: pointer;
+		i {
+			margin-bottom: 5px;
+		}
+	}
+}
+.drawer-toggle-bg {
+	height: 80px;
+	#gradient > .vertical(transparent, @body-bg);
+	pointer-events: none;
 }
 .filter-drawer {
 	background: lighten(@body-bg, 7%);
