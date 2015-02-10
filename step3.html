@@ -41,11 +41,12 @@
             <li><a href="#contact">Help</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container fixed-navbar-container">
-      <div class="search-form">
+
+    <div class="">
+    <br>
+    <br>
+      <div class="results-search-form">
           <form >
               <fieldset class="radio-tabs">
                   <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
@@ -55,16 +56,25 @@
                   <input type="radio" name="flight_type" value="multicity" id="rt-3" class="radio-tab">
                   <label for="rt-3" class="radio-tab-label">Multi-City</label>
               </fieldset>
-              <fieldset class="searchbox refine-search col-md-6">
-                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input">
+              <fieldset class="results-searchbox col-md-6">
+                  <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                  <i class="egencia-icon results-searchbox-icon sufix-icon-input"></i>
+                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input prefix-icon sufix-icon">
               </fieldset>
-              <fieldset class="searchbox refine-search col-md-6">
-                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_destination" placeholder="Where are you going?" value="Philadelphia" class="searchbox-input">
+              <fieldset class="results-searchbox col-md-6">
+                  <input type="text" name="flight_destination" placeholder="Where are you going?" value="Philadelphia" class="searchbox-input last">
               </fieldset>
-              <fieldset>
-                <input type="date" class="datepicker refine-date  col-md-6">
+              <fieldset class="results-datebox col-md-6">
+                <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                <input type="date" class="results-datebox-input prefix-icon">
+                <div class="day-stepper">
+                  <div class="egencia-icon"></div>
+                  <div class="egencia-icon"></div>
+                </div>
+              </fieldset>
+              <fieldset class="results-datebox col-md-6">
+                <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                <input type="date" class="results-datebox-input prefix-icon">
                 <div class="day-stepper">
                   <div class="egencia-icon"></div>
                   <div class="egencia-icon"></div>
@@ -73,7 +83,27 @@
           </form>
         </div>
       </div>
+    </div>
+    <br>
+  </nav>
 
+    <div class="container fixed-navbar-container">
+    <br><br><br><br><br><br><br><br>
+    <div class="col-sm-12">
+      <div class="panel">
+        <div class="row">
+          <div class="result-logo col-md-2">
+            <img src="img/delta_logo.jpg" width="50px" alt="Delta Airlines">
+          </div>
+          <div class="result-info col-md-10">
+            <h4 class="text-muted">Delta Airline</h4>
+            <div class="result-time">
+              <span class="h2">7:00<small>A</small></span>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
 
     </div><!-- /.container -->
 
