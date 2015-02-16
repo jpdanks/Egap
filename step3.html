@@ -48,13 +48,27 @@
     <br>
       <div class="results-search-form">
           <form >
-              <fieldset class="radio-tabs">
+              <fieldset class="radio-tabs col-md-6">
                   <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
                   <label for="rt-1" class="radio-tab-label">Round Trip</label>
                   <input type="radio" name="flight_type" value="oneway" id="rt-2" class="radio-tab">
                   <label for="rt-2" class="radio-tab-label">One Way</label>
                   <input type="radio" name="flight_type" value="multicity" id="rt-3" class="radio-tab">
                   <label for="rt-3" class="radio-tab-label">Multi-City</label>
+              </fieldset>
+              <fieldset class="col-md-6 radio-tabs text-right">
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Stops
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </div>
               </fieldset>
               <fieldset class="results-searchbox col-md-6">
                   <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
@@ -79,6 +93,45 @@
                   <div class="egencia-icon"></div>
                   <div class="egencia-icon"></div>
                 </div>
+              </fieldset>
+              <fieldset class="results-filters col-md-12 text-right">
+              <br>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Stops
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Price
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Class
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
               </fieldset>
           </form>
         </div>

@@ -7201,6 +7201,19 @@ button.close {
   color: #009fc2;
   padding-top: 2px;
 }
+.dropdown-toggle {
+  color: #fff;
+  font-size: 12px;
+  background: transparent;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+}
 .results-search-form .radio-tabs {
   padding-left: 6px;
   margin-bottom: 7.5px;
