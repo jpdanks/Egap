@@ -42,9 +42,7 @@
           </ul>
         </div><!--/.nav-collapse -->
 
-
     <div class="">
-    <br>
     <br>
       <div class="results-search-form">
           <form >
@@ -59,7 +57,7 @@
               <fieldset class="col-md-6 radio-tabs text-right">
                 <div class="dropdown">
                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                    Stops
+                    1 Adult
                     <span class="egencia-icon">&nbsp;</span>
                   </button>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -141,22 +139,86 @@
   </nav>
 
     <div class="container fixed-navbar-container">
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
     <div class="col-sm-12">
-      <div class="panel">
+      <div class="panel result-tile">
         <div class="row">
-          <div class="result-logo col-md-2">
-            <img src="img/delta_logo.jpg" width="50px" alt="Delta Airlines">
+          <div class="result-info col-md-9 delta">
+          <div class="row">
+            <div class="vendor-name col-md-12">Delta Airlines</div>
           </div>
-          <div class="result-info col-md-10">
-            <h4 class="text-muted">Delta Airline</h4>
-            <div class="result-time">
-              <span class="h2">7:00<small>A</small></span>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">7:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">1:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
             </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel result-tile">
+        <div class="row">
+          <div class="result-info col-md-9 american">
+          <div class="row">
+            <div class="vendor-name col-md-12">American Airlines</div>
+          </div>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">11:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">12:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
           </div>
         </div>
       </div>  
-    </div>
+      <div class="panel result-tile">
+        <div class="row">
+          <div class="result-info col-md-9 british">
+          <div class="row">
+            <div class="vendor-name col-md-12">British Airlines</div>
+          </div>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">11:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">12:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
+          </div>
+        </div>
+      </div>  
 
     </div><!-- /.container -->
 
@@ -164,6 +226,13 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript">
+          $( ".flight-time" ).slider({
+            range: true,
+            values: [ 17, 67 ]
+          });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
