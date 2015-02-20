@@ -1,0 +1,85 @@
+//Resutls styling
+
+
+.result-tile {
+	position: relative;
+	border-radius: 0;
+	color: @text-color;
+	padding: @padding-base-horizontal;
+	margin-bottom: 5px;
+	&:after {
+		content: " ";
+		width: 1px;
+		border-right: 1px dashed #DADADA;
+		position: absolute;
+		right: 25%;
+		top: 0;
+		height: 100%;
+	}
+	.result-info {
+		padding-left: 170px;
+		&.delta {
+			background-image: url(../img/delta_logo.jpg);
+			background-size: 80px;
+			background-repeat: no-repeat;
+			background-position: 5.5% 50%;
+		}
+		&.american {
+			background-image: url(../img/american_logo.jpg);
+			background-size: 80px;
+			background-repeat: no-repeat;
+			background-position: 5.5% 50%;
+		}
+		&.british {
+			background-image: url(../img/british_logo.png);
+			background-size: 80px;
+			background-repeat: no-repeat;
+			background-position: 5.5% 50%;
+		}
+		.vendor-name {
+			font-size: (@font-size-h4 - 2);
+			opacity: .5;
+			padding-bottom: @padding-base-horizontal;
+			width: 100%;
+		}
+		.result-datetime {
+			display: inline-block;
+			&:last-of-type {
+				padding-right: 30px;
+			}
+		}
+		.result-time {
+			font-size: (@font-size-h2 + 2px);
+			font-weight: 400;
+			small {
+				font-size: 55%;
+			}
+		}
+		.result-date {
+			opacity: .5;
+		}
+	}
+	.result-price {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 100%;
+		margin-bottom: -25%;
+		font-size: (@font-size-h3 + 2px);
+		color: @brand-primary;
+	}
+	.price-details {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 100%;
+		margin-bottom: -37.5%;
+		opacity: .5;
+	}
+}
+
+.result-logo {
+	img {
+		max-width: 80px;
+	}
+}

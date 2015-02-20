@@ -7201,6 +7201,142 @@ button.close {
   color: #009fc2;
   padding-top: 2px;
 }
+.dropdown-toggle {
+  color: #fff;
+  font-size: 12px;
+  background: transparent;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  color: #fff;
+  background: transparent;
+  border-color: transparent;
+}
+.results-search-form .radio-tabs {
+  padding-left: 6px;
+  margin-bottom: 7.5px;
+}
+.results-search-form .searchbox-input {
+  font-size: 24px;
+  border-bottom: 2px solid #434547;
+}
+.results-search-form .searchbox-input.last {
+  padding-left: 0;
+}
+.results-searchbox-icon {
+  font-size: 24px;
+  position: absolute;
+  padding-top: 7.5px;
+}
+.results-datebox {
+  padding-top: 15px;
+}
+.results-datebox .prefix-icon-input {
+  left: 30px;
+  opacity: .3;
+}
+.results-datebox .prefix-icon {
+  padding-left: 60px;
+}
+.results-datebox-input {
+  background: #3d3e41;
+  border: none;
+  width: 100%;
+  padding: 7.5px 15px;
+}
+input.prefix-icon {
+  padding-left: 37.5px;
+}
+input.sufix-icon {
+  padding-left: 37.5px;
+}
+.prefix-icon-input {
+  left: 15px;
+}
+.sufix-icon-input {
+  right: 15px;
+}
+.result-tile {
+  position: relative;
+  border-radius: 0;
+  color: #333333;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+.result-tile:after {
+  content: " ";
+  width: 1px;
+  border-right: 1px dashed #DADADA;
+  position: absolute;
+  right: 25%;
+  top: 0;
+  height: 100%;
+}
+.result-tile .result-info {
+  padding-left: 170px;
+}
+.result-tile .result-info.delta {
+  background-image: url(../img/delta_logo.jpg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 5.5% 50%;
+}
+.result-tile .result-info.american {
+  background-image: url(../img/american_logo.jpg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 5.5% 50%;
+}
+.result-tile .result-info.british {
+  background-image: url(../img/british_logo.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 5.5% 50%;
+}
+.result-tile .result-info .vendor-name {
+  font-size: 16px;
+  opacity: .5;
+  padding-bottom: 12px;
+  width: 100%;
+}
+.result-tile .result-info .result-datetime {
+  display: inline-block;
+}
+.result-tile .result-info .result-datetime:last-of-type {
+  padding-right: 30px;
+}
+.result-tile .result-info .result-time {
+  font-size: 32px;
+  font-weight: 400;
+}
+.result-tile .result-info .result-time small {
+  font-size: 55%;
+}
+.result-tile .result-info .result-date {
+  opacity: .5;
+}
+.result-tile .result-price {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: -25%;
+  font-size: 26px;
+  color: #009fc2;
+}
+.result-tile .price-details {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: -37.5%;
+  opacity: .5;
+}
+.result-logo img {
+  max-width: 80px;
+}
 .drawer {
   position: fixed;
   z-index: 1;
@@ -7381,4 +7517,22 @@ button.close {
 }
 .ui-slider-range {
   background: #009fc2;
+}
+.flight-slider.ui-widget-content {
+  background: transparent;
+  height: 2px;
+}
+.flight-slider .ui-state-default,
+.flight-slider .ui-widget-content .ui-state-default,
+.flight-slider .ui-widget-header .ui-state-default {
+  width: 12px;
+  height: 12px;
+  top: -5px;
+  background: #fff;
+  border: 2px solid #009fc2;
+}
+.flight-slider .ui-state-default + .ui-slider-handle,
+.flight-slider .ui-widget-content .ui-state-default + .ui-slider-handle,
+.flight-slider .ui-widget-header .ui-state-default + .ui-slider-handle {
+  margin-left: -6px;
 }

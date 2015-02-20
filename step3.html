@@ -41,13 +41,12 @@
             <li><a href="#contact">Help</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container fixed-navbar-container">
-      <div class="search-form">
+    <div class="">
+    <br>
+      <div class="results-search-form">
           <form >
-              <fieldset class="radio-tabs">
+              <fieldset class="radio-tabs col-md-6">
                   <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
                   <label for="rt-1" class="radio-tab-label">Round Trip</label>
                   <input type="radio" name="flight_type" value="oneway" id="rt-2" class="radio-tab">
@@ -55,38 +54,171 @@
                   <input type="radio" name="flight_type" value="multicity" id="rt-3" class="radio-tab">
                   <label for="rt-3" class="radio-tab-label">Multi-City</label>
               </fieldset>
-              <fieldset class="searchbox refine-search col-md-6">
-                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input">
+              <fieldset class="col-md-6 radio-tabs text-right">
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    1 Adult
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </div>
               </fieldset>
-              <fieldset class="searchbox refine-search col-md-6">
-                  <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_destination" placeholder="Where are you going?" value="Philadelphia" class="searchbox-input">
+              <fieldset class="results-searchbox col-md-6">
+                  <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                  <i class="egencia-icon results-searchbox-icon sufix-icon-input"></i>
+                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input prefix-icon sufix-icon">
               </fieldset>
-              <div class="row"></div>
-              <fieldset>
-                <input type="date" class="datepicker refine-date  col-md-6">
+              <fieldset class="results-searchbox col-md-6">
+                  <input type="text" name="flight_destination" placeholder="Where are you going?" value="Philadelphia" class="searchbox-input last">
+              </fieldset>
+              <fieldset class="results-datebox col-md-6">
+                <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                <input type="date" class="results-datebox-input prefix-icon">
                 <div class="day-stepper">
                   <div class="egencia-icon"></div>
                   <div class="egencia-icon"></div>
                 </div>
               </fieldset>
-              <fieldset>
-                <input type="date" class="datepicker refine-date  col-md-6">
+              <fieldset class="results-datebox col-md-6">
+                <i class="egencia-icon results-searchbox-icon prefix-icon-input"></i>
+                <input type="date" class="results-datebox-input prefix-icon">
                 <div class="day-stepper">
                   <div class="egencia-icon"></div>
                   <div class="egencia-icon"></div>
                 </div>
+              </fieldset>
+              <fieldset class="results-filters col-md-12 text-right">
+              <br>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Stops
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Price
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
+                <span class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    Class
+                    <span class="egencia-icon">&nbsp;</span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                  </ul>
+                </span>
               </fieldset>
           </form>
         </div>
-        <div class="search-results">
-          <div class="panel">
-            
+      </div>
+    </div>
+    <br>
+  </nav>
+
+    <div class="container fixed-navbar-container">
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="col-sm-12">
+      <div class="panel result-tile">
+        <div class="row">
+          <div class="result-info col-md-9 delta">
+          <div class="row">
+            <div class="vendor-name col-md-12">Delta Airlines</div>
+          </div>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">7:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">1:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
           </div>
         </div>
       </div>
-
+      <div class="panel result-tile">
+        <div class="row">
+          <div class="result-info col-md-9 american">
+          <div class="row">
+            <div class="vendor-name col-md-12">American Airlines</div>
+          </div>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">11:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">12:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
+          </div>
+        </div>
+      </div>  
+      <div class="panel result-tile">
+        <div class="row">
+          <div class="result-info col-md-9 british">
+          <div class="row">
+            <div class="vendor-name col-md-12">British Airlines</div>
+          </div>
+            <div class="row">
+              <div class="result-datetime col-md-3">
+                <div class="result-time">11:00<small>A</small></div>
+                <div class="result-date">Jan 2</div>
+              </div> 
+              <div class="result-datetime col-md-6">
+              <div class="flight-time flight-slider"></div>
+              </div>
+              <div class="result-datetime col-md-3 text-right">
+                <div class="result-time">12:30<small>P</small></div>
+                <div class="result-date">Jan 2</div>
+              </div>
+            </div>
+          </div>
+          <div class="result-prices col-md-3">
+              <div class="result-price text-center">$241</div>
+              <div class="price-details text-center">Details</div>
+          </div>
+        </div>
+      </div>  
 
     </div><!-- /.container -->
 
@@ -94,6 +226,13 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+        <script type="text/javascript">
+          $( ".flight-time" ).slider({
+            range: true,
+            values: [ 17, 67 ]
+          });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

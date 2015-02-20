@@ -559,7 +559,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/Modules\/_calendar.less": {
+	"\/less\/modules\/_calendar.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -567,7 +567,7 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/Modules\/_calendar.less",
+		"inputAbbreviatedPath": "\/less\/modules\/_calendar.less",
 		"outputAbbreviatedPath": "\/less\/css\/_calendar.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -579,7 +579,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/Modules\/_drawers.less": {
+	"\/less\/modules\/_drawers.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -587,7 +587,7 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/Modules\/_drawers.less",
+		"inputAbbreviatedPath": "\/less\/modules\/_drawers.less",
 		"outputAbbreviatedPath": "\/less\/css\/_drawers.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -599,7 +599,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/Modules\/_sliders.less": {
+	"\/less\/modules\/_sliders.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -607,7 +607,7 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/Modules\/_sliders.less",
+		"inputAbbreviatedPath": "\/less\/modules\/_sliders.less",
 		"outputAbbreviatedPath": "\/less\/css\/_sliders.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -689,6 +689,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/less\/partials\/_navbar.less",
 		"outputAbbreviatedPath": "\/less\/css\/_navbar.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/partials\/_results.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/partials\/_results.less",
+		"outputAbbreviatedPath": "\/less\/css\/_results.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2128,6 +2148,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/step2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/step3.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/step3.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
