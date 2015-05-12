@@ -7,13 +7,16 @@
 	overflow: hidden;
 	padding: (@padding-base-vertical * 4) (@padding-base-horizontal * 2);
 	margin-bottom: -100%;
-	.transition (margin-bottom .25s ease-in-out);
+	.transition (margin-bottom 350ms ease-in-out);
 	&.open {
 		height: auto;
 		display: block;
 		bottom: 0;
-		margin-bottom: 69px;
+		margin-bottom: 0;
 	}
+}
+.opened .drawer.open {
+	margin-bottom: 69px;
 }
 .drawer-toggle {
 	margin-bottom: -60px;
@@ -36,4 +39,12 @@
 }
 .filter-drawer {
 	background: lighten(@body-bg, 7%);
+}
+#filter-close i {
+	float: right;
+	opacity: .3;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
 }

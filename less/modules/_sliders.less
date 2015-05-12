@@ -2,13 +2,13 @@
 
 .ui-widget-content {
 	background: lighten(@body-bg, 15%);
-	height: 5px;
+	height: 3px;
 }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	background: lighten(@body-bg, 25%);
+	background: @brand-primary;
 }
 
 .ui-slider {
@@ -18,18 +18,22 @@
 	  position: absolute;
 	  top: -8px;
 	  z-index: 2;
-	  width: 20px;
-	  height: 20px;
+	  width: 18px;
+	  height: 18px;
 	  border-radius: 100px;
 	  cursor: default;
 	  -ms-touch-action: none;
 	  touch-action: none;
+	  transition: box-shadow 150ms linear;
+	  &:active {
+	  	box-shadow: 0 0 0 2px @brand-primary;
+	  	outline: none;
+	  }
 	  &:focus {
-	  	background: #fff;
 	  	outline: none;
 	  }
 	  + .ui-slider-handle {
-	  	  margin-left: -20px;
+	  	  margin-left: -18px;
 	  }
 	 }
 	 .ui-slider-range {

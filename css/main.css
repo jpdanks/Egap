@@ -7453,16 +7453,19 @@ input.sufix-icon {
   overflow: hidden;
   padding: 24px 24px;
   margin-bottom: -100%;
-  transition: margin-bottom 0.25s ease-in-out;
-  -webkit-transition: margin-bottom 0.25s ease-in-out;
-  -moz-transition: margin-bottom 0.25s ease-in-out;
-  -ms-transition: margin-bottom 0.25s ease-in-out;
-  -o-transition: margin-bottom 0.25s ease-in-out;
+  transition: margin-bottom 350ms ease-in-out;
+  -webkit-transition: margin-bottom 350ms ease-in-out;
+  -moz-transition: margin-bottom 350ms ease-in-out;
+  -ms-transition: margin-bottom 350ms ease-in-out;
+  -o-transition: margin-bottom 350ms ease-in-out;
 }
 .drawer.open {
   height: auto;
   display: block;
   bottom: 0;
+  margin-bottom: 0;
+}
+.opened .drawer.open {
   margin-bottom: 69px;
 }
 .drawer-toggle {
@@ -7498,6 +7501,14 @@ input.sufix-icon {
 }
 .filter-drawer {
   background: #484a4c;
+}
+#filter-close i {
+  float: right;
+  opacity: .3;
+  cursor: pointer;
+}
+#filter-close i:hover {
+  opacity: 1;
 }
 .daterange-picker {
   font-size: 24px;
@@ -7582,12 +7593,12 @@ input.sufix-icon {
 }
 .ui-widget-content {
   background: #5c5e61;
-  height: 5px;
+  height: 3px;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  background: #75777b;
+  background: #009fc2;
 }
 .ui-slider {
   position: relative;
@@ -7597,19 +7608,23 @@ input.sufix-icon {
   position: absolute;
   top: -8px;
   z-index: 2;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 100px;
   cursor: default;
   -ms-touch-action: none;
   touch-action: none;
+  transition: box-shadow 150ms linear;
+}
+.ui-slider .ui-slider-handle:active {
+  box-shadow: 0 0 0 2px #009fc2;
+  outline: none;
 }
 .ui-slider .ui-slider-handle:focus {
-  background: #fff;
   outline: none;
 }
 .ui-slider .ui-slider-handle + .ui-slider-handle {
-  margin-left: -20px;
+  margin-left: -18px;
 }
 .ui-slider .ui-slider-range {
   position: absolute;
