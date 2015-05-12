@@ -1,5 +1,59 @@
 // Layout customizations
 
+#search-flight {
+	margin-top: 15%;
+	-webkit-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+	.search-form-results {
+		padding-top: 5%;
+		opacity: 0;
+		-webkit-transition: opacity 250ms linear 300ms;
+			    transition: opacity 250ms linear 300ms;
+		.search-form-results-list li {
+			opacity: 0;
+			padding-top: 15px;
+			&:nth-child(1) {
+			    -webkit-transition: all 250ms linear 500ms;
+			    	transition: all 250ms linear 500ms;
+			}
+			&:nth-child(2) {
+			    -webkit-transition: all 250ms linear 600ms;
+			    	transition: all 250ms linear 600ms;
+			}
+			&:nth-child(3) {
+			    -webkit-transition: all 250ms linear 700ms;
+			    	transition: all 250ms linear 700ms;
+			}
+			&:nth-child(4) {
+			    -webkit-transition: all 250ms linear 800ms;
+			    	transition: all 250ms linear 800ms;
+			}
+			&:nth-child(5) {
+			    -webkit-transition: all 250ms linear 900ms;
+			    	transition: all 250ms linear 900ms;
+			}
+			&:nth-child(6) {
+			    -webkit-transition: all 250ms linear 1000ms;
+			    	transition: all 250ms linear 1000ms;
+			}
+		}
+	}
+	&.opened {
+		margin-top: 0%;
+		.search-form-results,
+		.search-form-results-list li:nth-child(1),
+		.search-form-results-list li:nth-child(2),
+		.search-form-results-list li:nth-child(3),
+		.search-form-results-list li:nth-child(4),
+		.search-form-results-list li:nth-child(5),
+		.search-form-results-list li:nth-child(6),   {
+			opacity: 1;
+			padding-top: 0;
+		}
+	}
+}
+
+
 .dark-theme {
 	color: #fff;
 }

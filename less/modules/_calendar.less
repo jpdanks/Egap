@@ -27,10 +27,15 @@
 	table tr td {
 		padding: @padding-base-horizontal @padding-base-vertical ;
 		position: relative;
+		span {
+			pointer-events: none;
+			cursor: default;
+		}
 		&.disabled, &.off {
 			opacity: .3;
 			&:hover:after {
 				border: none;
+				cursor: not-allowed;
 			}
 		}
 		&.active {
