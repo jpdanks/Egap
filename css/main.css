@@ -7029,6 +7029,35 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#search_flights {
+  bottom: -70px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+#search_flights.opened {
+  bottom: 0;
+}
+#nav_date.arrow-right {
+  opacity: 0;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+#nav_date.arrow-right.opened {
+  opacity: .2;
+}
+#nav_date.date {
+  opacity: 0;
+  margin-left: 2.5%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+#nav_date.date.opened {
+  opacity: 1;
+  margin-left: 0;
+}
+.nav.navbar-nav {
+  width: 80% !important;
+}
 #search-flight {
   margin-top: 15%;
   -webkit-transition: all 250ms ease-in-out;

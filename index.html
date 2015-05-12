@@ -45,7 +45,7 @@
     </nav>
 
     <div class="container fixed-navbar-container">
-      <div class="search-form opened" id="search-flight">
+      <div class="search-form " id="search-flight">
           <form >
               <fieldset class="radio-tabs">
                   <input type="radio" name="flight_type" value="roundtrip" id="rt-1" class="radio-tab" checked="checked">
@@ -57,11 +57,11 @@
               </fieldset>
               <fieldset class="searchbox">
                   <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="New York City" class="searchbox-input">
+                  <input type="text" name="flight_origin" placeholder="Where are you leaving from?"  value="Seattle" class="searchbox-input">
               </fieldset>
               <fieldset class="searchbox">
                   <label class="searchbox-label"><i class="egencia-icon searchbox-icon"></i></label>
-                  <input type="text" name="flight_destination" placeholder="Where are you going?" class="searchbox-input">
+                  <input type="text" name="flight_destination" id="flight_destination" placeholder="Where are you going?" class="searchbox-input">
               </fieldset>
           </form>
           <!-- <div class="search-form-recent">
@@ -193,6 +193,12 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+
+            document.getElementById("flight_destination").focus();
+
+            $("#flight_destination").keypress(function() {
+                $("#search-flight").addClass("opened");
+            });
         </script>
     </body>
 </html>
