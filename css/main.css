@@ -7617,7 +7617,7 @@ input.sufix-icon {
   transition: box-shadow 150ms linear;
 }
 .ui-slider .ui-slider-handle:active {
-  box-shadow: 0 0 0 2px #009fc2;
+  box-shadow: 0 0 0 2px #fff;
   outline: none;
 }
 .ui-slider .ui-slider-handle:focus {

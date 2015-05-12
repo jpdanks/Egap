@@ -602,7 +602,7 @@
               </div>
               <div class="col-md-4">
                 <fieldset>
-                  <label for="amount" class="label-heading">Price <span class="float-right">max:<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></span></label>
+                  <label for="amount" class="label-heading">Price</label>
                   <div id="price_slider"></div>
                 </fieldset>
                 <br>
@@ -638,11 +638,11 @@
               <div class="col-md-5">
                 <fieldset class="radio-tabs">
                   <div class="col-md-4 text-right">
-                    <input type="radio" name="outbound_range" value="any" id="rt-1" class="radio-tab" checked="checked">
-                    <label for="rt-1" class="radio-tab-label">Departs</label>
+                    <input type="radio" name="outbound_range" value="any" id="ort-1" class="radio-tab" checked="checked">
+                    <label for="ort-1" class="radio-tab-label">Departs</label>
                     <br>
-                    <input type="radio" name="outbound_range" value="nonstop" id="rt-2" class="radio-tab">
-                    <label for="rt-2" class="radio-tab-label">Arrives</label>
+                    <input type="radio" name="outbound_range" value="nonstop" id="ort-2" class="radio-tab">
+                    <label for="ort-2" class="radio-tab-label">Arrives</label>
                     <br>
                   </div>
                   <div class="col-md-8">
@@ -653,11 +653,11 @@
                 <br><br>
                 <fieldset class="radio-tabs">
                   <div class="col-md-4 text-right">
-                    <input type="radio" name="inbound_range" value="any" id="rt-1" class="radio-tab">
-                    <label for="rt-1" class="radio-tab-label">Departs</label>
+                    <input type="radio" name="inbound_range" value="any" id="irt-1" class="radio-tab">
+                    <label for="irt-1" class="radio-tab-label">Departs</label>
                     <br>
-                    <input type="radio" name="inbound_range" value="nonstop" id="rt-2" class="radio-tab" checked="checked">
-                    <label for="rt-2" class="radio-tab-label">Arrives</label>
+                    <input type="radio" name="inbound_range" value="nonstop" id="irt-2" class="radio-tab" checked="checked">
+                    <label for="irt-2" class="radio-tab-label">Arrives</label>
                     <br>
                   </div>
                   <div class="col-md-8">
@@ -687,10 +687,7 @@
             range: "min",
             min: 1,
             max: 10,
-            value: 2,
-            slide: function( event, ui ) {
-              $( "#amount" ).val( ui.value );
-            }
+            value: 2
           });
           $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
 
